@@ -1,0 +1,154 @@
+Date:24/10/2026 - Linux:class 3
+
+...............................................
+
+Task:
+
+1. How to search and replace case insensitive pattern in vi editor?
+2. How to search the pattern in forward direction?
+   hint: esc/<pattern> -----Enter ---------- and then press n for next pattern
+3. How to search the pattern in reverse direction ?
+4. How to insert a blank line where the cursor is pointing in vi editor?
+
+................................
+
+ Vi editor (vim- vi modified)
+ 
+ How to create a file in vi editor?
+ 
+ command: vi <file-name>
+ 
+ Note:
+ 
+ 1. if file exist then it will open the file when you execute vi <file-name>
+ 2. If file dosn't exist it will create a file and open the file
+ 
+ .............................................................
+ 
+ Vi editor modes
+ 
+ 1. Command mode
+ 2. Insert mode
+ 
+ Whenever you execute vi <file-name> it will open the file and by default 
+ it will be in the command mode 
+ 
+ To switch from command mode to insert mode we need to use i (insert)
+ 
+ ......................................
+ 
+ How to save the content in vi editor and come out of file?
+ 
+ esc: wq
+ 
+ w = write (save)
+ q = quit
+ 
+ ......................................
+ 
+ How to comeout of vi editor without saving the content in the file?
+ 
+ esc: q!
+ 
+ .......................................
+ 
+ How to add line numbers in vi editor?
+ 
+ esc:set nu
+ 
+ nu----number
+ 
+ ....................................
+ 
+ How to remove the line numbers?
+ 
+ esc:set nonu
+ 
+ ...................................
+ 
+ 
+ How to move to 5th line ?
+ 
+ esc 5 G
+ 
+ or
+  
+ esc 5 shift+g
+ 
+ ....................
+ 
+ How to move to 14th line ?
+ 
+ esc 14 G
+ 
+ ..........................
+ 
+  How to move to last line ?
+ 
+ esc G
+ .............................
+ 
+ How to move to end of a line where the cursor is pointing?
+ 
+ esc A
+ 
+ ..................................
+ 
+ How to delete the line where the cursor is pointing?
+ 
+ esc dd
+ 
+ .........................................
+ 
+ How to delete 10 lines from the line where the cursor is pointing?
+ 
+ esc 10 dd
+ 
+ ....................................
+ 
+ How to search and replace the string from where the cursor is pointing?
+ 
+ esc:s/<search-patten>/<return-pattern>
+ 
+ s= search
+
+Above command will replace a string where the cursor is pointing (only 1st occurance)
+
+................................
+  
+ esc:s/<search-patten>/<return-pattern>/g
+
+
+Above command will replace a string where the cursor is pointing (all the occurance)s
+
+................................
+
+ esc:5s/<search-patten>/<return-pattern>/g
+
+
+Above command will replace a string in 5th line(all the occurances)
+
+................................
+
+ esc:5,10s/<search-patten>/<return-pattern>/g
+
+
+Above command will replace a string from 5t line to 10th line (all the occurances)
+
+................................
+
+esc:5,10s/<search-patten>/<return-pattern>
+
+
+Above command will replace a string from 5t line to 10th line (only 1st occurances)
+
+................................
+
+esc:5,$s/<search-patten>/<return-pattern>/g
+
+
+Above command will replace a string from 5t line to last line (all the occurances)
+
+................................
+ 
+

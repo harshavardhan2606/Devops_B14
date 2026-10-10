@@ -1,0 +1,128 @@
+Date:26.09.2026 ----> class 5
+.....................................
+
+Task
+
+1. How to fetch only first and last line of a file using head and tail?
+2. How do print all lines of file except 4th line?
+
+.................................
+
+Wc command (word count)
+
+wc command in linux is used to count lines,words chars/bytesfrom a file
+
+Syntax: wc <file-name>
+
+Above command will display total no of lines,words and chars from the file
+
+....................................
+
+wc -l <file-name>
+
+This command will display total no of line in the file
+
+wc -w <file-name>
+
+This command will display total no of words in the file
+
+wc -m <file-name>
+
+This command will display total no of chars/byts in the file
+
+wc -L <file-name>
+
+This command will display total no of chars in the longest line of the file
+
+....................................................
+
+Head command
+
+Head command is used to display the first few lines of a file on the terminal
+
+Note: By default head command will display the first 10 lines of a file on the terminal
+
+Syntax: head <file-name>
+
+Ex:head -12 <file-name>
+
+Above command will display first 12 lines of a file on the terminal
+
+Ex:head -6 <file-name>
+
+Above command will display first 6 lines of a file on the terminal
+
+..................................
+
+Tail command
+
+tail command is used to display the last few lines of a file on the terminal
+
+Note: By default tail command will display the last 10 lines of a file on the terminal
+
+Syntax: tail <file-name>
+
+Ex:tail -12 <file-name>
+
+Above command will display last 12 lines of a file on the terminal
+
+Ex:tail -6 <file-name>
+
+Above command will display last 6 lines of a file on the terminal
+
+...............................................
+
+Pipe operator (| )
+
+The pipe operator is used to send the output of one command as an input to another command
+
+Syntax: command-1 | command-2
+
+........................................
+
+Ex: head -15 <file-name> | tail -4
+
+Above command display line no 12 to 15 on the terminal
+
+Ex: head <file-name> | tail -1
+
+Above command display only 10th line on the terminal
+
+Ex: head -12 <file-name> | tail -8
+
+Above command display line no 5 to 12 on the terminal
+
+Ex: tail -15 <file-name> | tail -1
+
+Above command display only the 15th line  on the terminal
+
+Ex: tail -4 <file-name> | head -1
+
+Above command display only first line out of last 4 lines of a file
+
+Ex: cat -n <file-name> | tail -3
+
+Above command will display last 3 lines of a file along with line numbers
+
+............................
+
+tee command
+
+tee command is used with pipe operator which is used to read the input and copy to one or more files
+
+Syntax: command-1 | tee command-2
+
+Ex: cat class3.txt | tee fil5.txt
+
+Above command will replace the content of file5.txt with the content of class3.txt
+
+Ex: ls | tee file.txt
+Above command will move the output of ls to file.txt
+
+Ex: tail -8 file4.txt | tee rk.txt
+
+Above command will copy last 8 lines of file4.txt into rk.txt
+
+...................................................
+
+

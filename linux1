@@ -1,0 +1,171 @@
+Date: 22/09/2026 ---> Linux class 1 
+..................................
+Task:
+
+1. Create a files main.txt, data.txt inside a directory batch14 using single command
+2. You are somewhere inside a directory structure. Which command can you use to return directly to your home directory?
+
+..........................................
+
+  What is Linux?
+  Linux is an operating system just like windows,macos..
+  
+  An operating system helps us interact with the computer
+  and manage things such as:
+  
+  Files and folders
+  programs and applications
+  memory
+  hardware
+  users and permissions
+  
+  Linux is widely used in:
+  
+  Servers
+  cloud computing
+  software development
+  networking
+  Cyber security
+  Embedded systems
+  
+  .........................................................
+  
+  What is Linux terminal?
+  
+  In windows, we often use a grafical interface to create folders, delete files etc
+  In Linux, we can perform these operations using the terminal
+  
+  The terminal allows us to communicate with the operating system by typing commands
+  
+  ..........................................................
+  
+  Commands:
+  
+  ...........................
+  
+  PWD: present working directory
+  
+  command: pwd
+  
+  It will tell us the directory in which we are currently working
+  
+  .....................................
+  
+  ls (list)
+
+  this command display the contents (files,dir's..) in the curent working
+  
+  .................................
+  
+  How to create a directory?
+  
+  Syntax: mkdir <dir-name>
+  
+  ex: mkdir batch14
+  
+  ..............................
+  
+  How to create a multiple dir's?
+  
+  Syntax: mkdir <dir1> <dir2> <dir3>
+  .........................
+  
+  How to create a dir inside a dir (how to create a child dir inside a parent dir)
+  
+  Syntax: mkdir <dir1>/<dir1>
+  
+  ex: mkdir batch14/rk
+  
+  Above command will create a rk dir inside batch14 dir
+  ...........................
+  
+  Note: If we dont have parent dir and if we want to  create a parent dir and
+  child dir inside parent dir then -p option should be used
+  
+  Syntax: mkdir -p <parent-dir>/<child-dir>
+  
+  ......................................
+  
+  How to delete the directory?
+  
+  Syntx: rmdir <dir-name>
+  
+  ...........................
+  
+  How to delete a dir and its content recursively?
+  
+  syntax: rm -r <dir-name>
+  
+  ......................................
+  
+  Tree command:
+  
+  Tree command is used to display the content of pwd
+  in a tree like format
+  .......................
+  
+  clear:
+  
+  This command will clears the terminal screen
+  
+  ..............................
+  
+  How to create a file?
+  
+  Touch command is used to create a file
+  
+  Synatx: touch <file-name>
+  
+  Ex: touch file1.txt
+  
+  .......................
+  
+  How to create a multiple files using touch command?
+  
+  syntax: touch <file1> <file2> <file3>
+  
+  ...............................
+  
+  How to delete a file?
+  
+  Syntax: rm <file-name>
+  
+  ..................................
+  
+  How to delete multile files together?
+  
+  Synatx: rm <file2> <file2> <file3>
+  
+  .................................
+  
+  cd: change directory
+  
+  It is used to navigate to given dir
+  
+  ex: cd batch14
+  
+  ...........................
+  
+  How to move back to previous dir?
+  cd ..
+  
+  How to go back to 2 dir's backward
+  
+  cd ../..
+  
+  .................................
+  
+  Man
+  
+  ex: man <command-name>
+  
+  man mkdir
+  
+  Above command will open the manual page of mkdir (details of mkdir)
+  
+  
+  ................................
+  
+
+  
+
